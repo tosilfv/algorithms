@@ -1,3 +1,7 @@
+// Algorithm pattern: FREQUENZY LOOP
+// Time complexity: O(N)
+// Space complexity: O(N)
+
 const isAnagram = (str1: string, str2: string): boolean => {
   // Check if two strings have same amount of same characters: "iceman" = "cinema"
   // create arrays for both strings
