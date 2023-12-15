@@ -1,3 +1,7 @@
+# Algorithm pattern: FREQUENZY LOOP
+# Time complexity: O(N)
+# Space complexity: O(N)
+
 def is_anagram(str_1, str_2):
     # See if both the strings contain an equal amount of the same characters, if not, return False
     if len(str_1) != len(str_2):
