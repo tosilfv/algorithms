@@ -3,7 +3,7 @@
 ## Install, start up
 
 If necessary, install dependencies by running the command npm install<br />
-Run TypeScript file int the Terminal by typing tsc<br />
+Run TypeScript file in the Terminal by typing tsc<br />
 
 ## Project Background
 
