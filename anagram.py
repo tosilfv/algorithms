@@ -4,8 +4,7 @@
 
 def is_anagram(str_1, str_2):
     # See if both the strings contain an equal amount of the same characters, if not, return False
-    if len(str_1) != len(str_2):
-        return False
+    if len(str_1) != len(str_2): return False
     # Create dictionary and save characters there as keys with initial value 1
     str_1_dict = {}
     # save first string's characters to array
@@ -23,7 +22,8 @@ def is_anagram(str_1, str_2):
     for ch_2 in str_2_list:
         if ch_2 in str_1_dict:
             str_1_dict[ch_2] -= 1
-    # In dict if key contains value larger than 1, return False
+    # In dict if key contains value larger than 0, return False
+    # all dict values should be zero because of decrementing the amounts of matched characters
     # make a set of dict values, and if they are all 0, then length of set is 1, else return False
     val_set = set(str_1_dict.values())
     return True if len(val_set) == 1 else False
