@@ -4,6 +4,8 @@
 
 const isAnagram = (str1: string, str2: string): boolean => {
   // Check if two strings have same amount of same characters: "iceman" = "cinema"
+  // if the string lengths don't match, return false
+  if (str1.length !== str2.length) return false;
   // create arrays for both strings
   const str1Arr = str1.split("");
   const str2Arr = str2.split("");
@@ -28,4 +30,4 @@ const isAnagram = (str1: string, str2: string): boolean => {
   return str1Set.size === 1;
 };
 
-isAnagram("icemxn", "cinema");
+isAnagram("iceman", "cinema");
